@@ -33,7 +33,7 @@ var makeArray = function(array) {
         //window对象 字符串 函数 也有length属性
         if (i == null || typeof array === 'String' || jQuery.isFunction(array) ||array.setInterval)
             ret[0] = array
-        else 
+        else
             ret[--i] = array[i]
     }
     return ret;
@@ -45,7 +45,7 @@ var makeArray = function(array) {
 ##思考？```Array.prototype.slice.call```的应用范围
 在jQuery的数组化过程中我们看到了剔除了带有length属性的window、string、function，我们也在```Array.prototype.slice.call```里试一试
 
-![](media/14714959475341/14715012487175.jpg)
+![](http://ob3wg7deo.bkt.clouddn.com/14715012487175.jpg)
 
 很明显```Array.prototype.slice.call```没有经过考验，把带有length属性的对象都slice成了数组。
 
@@ -60,7 +60,3 @@ window对象
 字符串
 function
 ###```Array.prototype.slice.call```是通过判断参数有没有length属性来slice数组的
-
-
-
-

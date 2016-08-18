@@ -42,7 +42,7 @@ var makeArray = function(array) {
 
 主要原理是获取类数组的length属性的值，然后将类数组里的元素全都push到一个新的真实数组里去。
 
-##思考？```Array.prototype.slice.call```的应用范围
+##思考？```Array.prototype.slice.call```
 在jQuery的数组化过程中我们看到了剔除了带有length属性的window、string、function，我们也在```Array.prototype.slice.call```里试一试
 
 ![](http://ob3wg7deo.bkt.clouddn.com/14715012487175.jpg)
